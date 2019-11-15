@@ -1,9 +1,7 @@
 package sample;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -11,12 +9,7 @@ import javafx.scene.layout.Pane;
 import javafx.geometry.Insets;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
 
 public class Main extends Application {
 
@@ -53,7 +46,6 @@ public class Main extends Application {
         scene1 = new Scene(pane);
 
         // 14.3 - cards
-        Label label2 = new Label("14.3 - cards");
         Button button2 = new Button("go to 14.1 hw");
         button2.setOnAction(event -> primaryStage.setScene(scene1));
 
@@ -78,7 +70,7 @@ public class Main extends Application {
         box.getChildren().add(cardy1);
         box.getChildren().add(cardy2);
         box.getChildren().add(cardy3);
-        box.getChildren().addAll(label2, button2);
+        box.getChildren().addAll(button2);
 
         scene2 = new Scene(box);
 
